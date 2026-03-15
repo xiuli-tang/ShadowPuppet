@@ -1,0 +1,32 @@
+{
+  "name": "智赋千影",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@react-three/drei": "^10.0.0",
+    "@react-three/fiber": "^9.0.0",
+    "axios": "^1.13.5",
+    "lottie-web": "^5.13.0",
+    "makerjs": "^0.19.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.182.0",
+    "vue": "^2.7.16",
+    "vue-router": "^3.6.5",
+    "zustand": "^5.0.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-vue2": "^2.3.1",
+    "vite": "^6.0.0"
+  }
+}

@@ -1,0 +1,98 @@
+const TEXTURE_BASE = '/textures';
+
+export const puppetParts = {
+  torso: {
+    partName: 'torso',
+    textureUrl: `${TEXTURE_BASE}/torso_diffuse.png`,
+    thicknessUrl: `${TEXTURE_BASE}/torso_thickness.png`,
+    scale: 1,
+    pivotPoint: [0.5, 0.5],
+    position: [0.35, 0.43, 0],
+    children: ['head', 'leftArmUpper', 'rightArmUpper', 'leftLegUpper', 'rightLegUpper'],
+  },
+  head: {
+    partName: 'head',
+    textureUrl: `${TEXTURE_BASE}/head_diffuse.png`,
+    thicknessUrl: `${TEXTURE_BASE}/head_thickness.png`,
+    scale: 1.35,
+    pivotPoint: [0.5, 0],
+    position: [0.75, 0.5, 0.05],
+    children: [],
+  },
+  leftArmUpper: {
+    partName: 'leftArmUpper',
+    textureUrl: `${TEXTURE_BASE}/leftArmUpper_diffuse.png`,
+    thicknessUrl: `${TEXTURE_BASE}/leftArmUpper_thickness.png`,
+    scale: 0.85,
+    pivotPoint: [0.5, 1],
+    position: [0.24, 0.7, 0.049],
+    children: ['leftArmLower'],
+  },
+  leftArmLower: {
+    partName: 'leftArmLower',
+    textureUrl: `${TEXTURE_BASE}/leftArmLower_diffuse.png`,
+    thicknessUrl: `${TEXTURE_BASE}/leftArmLower_thickness.png`,
+    scale: 0.7,
+    pivotPoint: [0.5, 1],
+    position: [-0.5, -0.53, 0.01],
+    children: [],
+  },
+  rightArmUpper: {
+    partName: 'rightArmUpper',
+    textureUrl: `${TEXTURE_BASE}/rightArmUpper_diffuse.png`,
+    thicknessUrl: `${TEXTURE_BASE}/rightArmUpper_thickness.png`,
+    scale: 0.85,
+    pivotPoint: [0.5, 1],
+    position: [0.25, 0.5, -0.01],
+    children: ['rightArmLower'],
+  },
+  rightArmLower: {
+    partName: 'rightArmLower',
+    textureUrl: `${TEXTURE_BASE}/rightArmLower_diffuse.png`,
+    thicknessUrl: `${TEXTURE_BASE}/rightArmLower_thickness.png`,
+    scale: 0.8,
+    pivotPoint: [0.5, 1],
+    position: [-0.53, -0.16, 0.01],
+    children: [],
+  },
+  leftLegUpper: {
+    partName: 'leftLegUpper',
+    textureUrl: `${TEXTURE_BASE}/leftLegUpper_diffuse.png`,
+    thicknessUrl: `${TEXTURE_BASE}/leftLegUpper_thickness.png`,
+    scale: 0.6,
+    pivotPoint: [0.5, 1],
+    position: [0.5, -0.17, -0.01],
+    children: ['leftLegLower'],
+  },
+  leftLegLower: {
+    partName: 'leftLegLower',
+    textureUrl: `${TEXTURE_BASE}/leftLegLower_diffuse.png`,
+    thicknessUrl: `${TEXTURE_BASE}/leftLegLower_thickness.png`,
+    scale: 1,
+    pivotPoint: [0.5, 1],
+    position: [0.04, -0.24, 0.01],
+    children: [],
+  },
+  rightLegUpper: {
+    partName: 'rightLegUpper',
+    textureUrl: `${TEXTURE_BASE}/rightLegUpper_diffuse.png`,
+    thicknessUrl: `${TEXTURE_BASE}/rightLegUpper_thickness.png`,
+    scale: 1,
+    pivotPoint: [0.5, 1],
+    position: [0, 0.15, -0.01],
+    children: ['rightLegLower'],
+  },
+  rightLegLower: {
+    partName: 'rightLegLower',
+    textureUrl: `${TEXTURE_BASE}/rightLegLower_diffuse.png`,
+    thicknessUrl: `${TEXTURE_BASE}/rightLegLower_thickness.png`,
+    scale: 1.1,
+    pivotPoint: [0.5, 1],
+    position: [0, -0.5, 0],
+    children: [],
+  },
+};
+
+export const ROOT_PART_NAME = 'torso';
+
+export default puppetParts;
